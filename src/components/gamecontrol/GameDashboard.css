@@ -1,0 +1,74 @@
+.control{
+    display: grid;
+    grid-template-columns: 10rem auto 10rem;
+    grid-template-rows: 5rem 5rem;
+}
+.itemplayer{
+  
+    grid-row: 1/3;
+    grid-column: 1/2;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  .itemrobot{
+    
+    grid-row: 1/3;
+    grid-column: 3/4;
+    
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+  .text{
+    text-align: center;
+  }
+  .button{
+    grid-row: 2/3;
+    grid-column: 2/3;
+   
+    text-align: center;
+    background-color: white;
+    
+    margin: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  .countdown{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+   
+  
+    
+  }
+.image{
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  margin: 15px;
+}
+  .form-actions button {
+    margin-left: 1rem;
+  }
+  
+  .winner {
+    
+    
+    background-color: #269F37;
+  }
+  .draw{
+    background-color: #fddd41;
+
+  }
+
+  .loser{
+    border: 2px solid #FF0000;
+    outline-color: #FF0000;
+   
+  }

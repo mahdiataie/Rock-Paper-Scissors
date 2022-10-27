@@ -2,37 +2,59 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: grid;
+  grid-template-columns: 25% 640px 25%;
+  grid-template-rows: 30px 480px 10rem auto;
+  padding: 10px;
+  gap: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item-video{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  text-align: "center";
+  z-index: 9;
+  width: 640px;
+  height: 480px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.item-card-player{
+  
+  grid-row: 3/4;
+  grid-column: 2/3;
+  height: 10rem;
+ 
 }
-
-.App-link {
-  color: #61dafb;
+.playerscore{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  text-align: center;
+  color: rgb(0, 0, 1);
+  font-size: 100px;
+  margin: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.robotscore{
+  grid-row: 3/4;
+  grid-column: 3/4;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+  margin: 20px;
+}
+.item-card-robot{
+  
+  grid-row: 3/4;
+  grid-column: 2/3;
+  justify-self: right;
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+  
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.item-name{
+  grid-row: 1/2;
+  grid-column: 2/3;
+  text-align: center;
 }
