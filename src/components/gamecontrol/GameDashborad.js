@@ -131,24 +131,24 @@ const GameDashboard = (props) => {
       setIsDraw(true);
     } else {
       // check whinner
-      if (playerGesture == "rock") {
-        if (computerGesture == "scissors") {
+      if (playerGesture === "rock") {
+        if (computerGesture === "scissors") {
           playerWins = true;
           statusText = "Rock beats scissors";
         } else {
           computerWins = true;
           statusText = "Paper beats rock";
         }
-      } else if (playerGesture == "paper") {
-        if (computerGesture == "rock") {
+      } else if (playerGesture === "paper") {
+        if (computerGesture === "rock") {
           playerWins = true;
           statusText = "Paper beats rock";
         } else {
           computerWins = true;
           statusText = "Scissors beat paper";
         }
-      } else if (playerGesture == "scissors") {
-        if (computerGesture == "paper") {
+      } else if (playerGesture === "scissors") {
+        if (computerGesture === "paper") {
           playerWins = true;
           statusText = "Scissors beat paper";
         } else {
@@ -181,6 +181,7 @@ const GameDashboard = (props) => {
     }
   }, [checkResult]);
 
+  
   useEffect(() => {
     props.onScore(playerState.score, robotState.score);
     if (playerState.score === 5) {
@@ -202,6 +203,7 @@ const GameDashboard = (props) => {
           height="130"
           width="130"
           className="image"
+          alt='PlayerGesture'
         ></img>
       </div>
       <div className={robotClasses}>
@@ -211,6 +213,7 @@ const GameDashboard = (props) => {
           height="130"
           width="130"
           className="image"
+          alt='RobotGesture'
         ></img>
       </div>
       <Timer
